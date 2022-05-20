@@ -7,8 +7,8 @@ function App() {
     return (
         <BrowserRouter>
             <Routes>
-                <Route exact ={'/'} element={ComingSoon}/>
-                {/*<Route exact path={'/soon'} component={ComingSoon}/>*/}
+                <Route path="/" element={<ComingSoon/>}/>
+                {/* <Route exact path={'/soon'} component={ComingSoon}/> */}
             </Routes>
         </BrowserRouter>
     );
