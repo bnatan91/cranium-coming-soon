@@ -1,15 +1,16 @@
 import ComingSoon from "./ComingSoon";
-import {BrowserRouter as Router, Redirect, Route, Switch} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+
+
 
 function App() {
     return (
-        <Router>
-            <Switch>
-                <Redirect exact from={'/'} to={'/soon'}/>
-                <Route exact path={'/soon'} component={ComingSoon}/>
-            </Switch>
-        </Router>
-
+        <BrowserRouter>
+            <Routes>
+                <Route exact ={'/'} element={ComingSoon}/>
+                {/*<Route exact path={'/soon'} component={ComingSoon}/>*/}
+            </Routes>
+        </BrowserRouter>
     );
 }
 
